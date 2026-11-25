@@ -1,0 +1,22 @@
+{
+  "name": "relatorio-manutencao-cd",
+  "version": "1.0.0",
+  "description": "Relatório de Manutenção — CD Embalagens",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "gerar-senha": "node scripts/gerar-senha.js",
+    "test": "node --test teste/*.test.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "better-sqlite3": "^13.2.0",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.5",
+    "helmet": "^8.3.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.9"
+  }
+}
